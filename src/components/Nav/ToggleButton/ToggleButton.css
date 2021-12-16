@@ -1,0 +1,14 @@
+.toggle-menu {
+  position: absolute;
+  font-size: 2rem;
+  top: 1%;
+  right: 1%;
+  display: none;
+}
+
+@media screen and (max-width: 678px) {
+  .toggle-menu {
+    display: block;
+  }
+}
+/*# sourceMappingURL=ToggleButton.css.map */

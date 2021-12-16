@@ -1,0 +1,88 @@
+@import '../../styles/variables/variables.scss';
+
+.site-footer {
+    background-color: $navcolor;
+    padding: 2rem;
+    p {
+        color: $textcolor;
+        font-size: 1.3rem;
+        text-align: center;
+        margin-top: 3%;
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: space-around;
+        
+        a {
+            text-decoration: none;
+            color: $textcolor;
+        }
+
+        span {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+    }
+
+    .wrapper {
+        .button {
+        display: inline-block;
+        height: 3rem;
+        width: 3rem;
+        border-radius: 0 20px 0 20px;
+        background: $textcolor;
+        margin: 0 5px;
+        transition: 0.5s;
+        cursor: pointer;
+        }
+
+        
+    }
+
+    .icon {
+        display: inline-block;
+        height: 3rem;
+        width: 3rem;
+        border-radius: 50px;
+        box-sizing: border-box;
+        text-align: center;
+        line-height: 60px;
+        svg {
+            font-size: 3rem;
+            background-color: $navcolor;
+            color: $textcolor;
+            line-height: 3rem;
+        }
+    }
+}
+
+.wrapper .button:hover {
+    width: 200px;
+    background: $textcolor;
+    border-radius: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper .button:hover span {
+    color: $navcolor;
+}
+
+
+span {
+    color: $textcolor;
+    margin: auto;
+    text-align: center;
+}
+
+
+@media screen and (max-width:678px) {
+    .site-footer {
+        .footer-links {
+            span {
+                font-size: 0.7rem;
+            }
+        }
+    }
+}

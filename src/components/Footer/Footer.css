@@ -1,0 +1,88 @@
+.site-footer {
+  background-color: #130944;
+  padding: 2rem;
+}
+
+.site-footer p {
+  color: #f1db65;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.site-footer .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.site-footer .footer-links a {
+  text-decoration: none;
+  color: #f1db65;
+}
+
+.site-footer .footer-links span {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.site-footer .wrapper .button {
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 0 20px 0 20px;
+  background: #f1db65;
+  margin: 0 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.site-footer .icon {
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  line-height: 60px;
+}
+
+.site-footer .icon svg {
+  font-size: 3rem;
+  background-color: #130944;
+  color: #f1db65;
+  line-height: 3rem;
+}
+
+.wrapper .button:hover {
+  width: 200px;
+  background: #f1db65;
+  border-radius: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper .button:hover span {
+  color: #130944;
+}
+
+span {
+  color: #f1db65;
+  margin: auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 678px) {
+  .site-footer .footer-links span {
+    font-size: 0.7rem;
+  }
+}
+/*# sourceMappingURL=Footer.css.map */
