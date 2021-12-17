@@ -84,8 +84,8 @@ const HomePage = () => {
                             <input name="email" type="email"></input>
                             <label htmlFor="message">Message:</label>
                             <textarea rows="5" maxLength='255'></textarea>
+                            <button><a href="#">Send Message</a></button>
                         </form>
-                        <button><a href="#">Send Message</a></button>
                     </div>
                     <div data-aos='fade-left' className="contact-me-info">
                         <span><FaMapMarkerAlt />357 SE. Lakewood Ave. Ormond Beach, FL 32174</span>

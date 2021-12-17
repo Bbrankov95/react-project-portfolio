@@ -160,6 +160,8 @@ section {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   text-align: center;
+  max-width: 700px;
+  margin: auto;
 }
 
 .about-wrapper .about-content .about-info {
@@ -266,6 +268,12 @@ section {
 .form-wrapper {
   width: 70%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .form-wrapper form {
@@ -277,6 +285,7 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  max-width: 1000px;
 }
 
 .form-wrapper label {
@@ -301,6 +310,7 @@ section {
   background-color: #130944;
   color: #f1db65;
   width: 50%;
+  max-width: 400px;
   font-size: 1em;
   padding: 10px;
   border-radius: 2rem;
