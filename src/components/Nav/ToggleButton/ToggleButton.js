@@ -1,12 +1,11 @@
 import { FaBars } from 'react-icons/fa';
-import './ToggleButton.css';
-
+import classes from './ToggleButton.module.scss';
 
 const ToggleButton = ({
     onClick
 }) => {
 
-    return (<a href="javascript:void(0);" className="toggle-menu" onClick={onClick}>
+    return (<a href="javascript:void(0);" className={classes["toggle-menu"]} onClick={onClick}>
         <FaBars />
     </a>);
 }

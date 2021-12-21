@@ -2,8 +2,8 @@
     "version": 3,
     "mappings": "AAAA,AAAA,YAAY,CAAC;EACT,QAAQ,EAAE,QAAQ;EAClB,SAAS,EAAE,IAAI;EACf,GAAG,EAAE,EAAE;EACP,KAAK,EAAE,EAAE;EACT,OAAO,EAAE,IAAI;CAChB;;AAGD,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAC/B,AAAA,YAAY,CAAC;IACT,OAAO,EAAE,KAAK;GACjB",
     "sources": [
-        "ToggleButton.scss"
+        "ToggleButton.module.scss"
     ],
     "names": [],
-    "file": "ToggleButton.css"
+    "file": "ToggleButton.module.css"
 }

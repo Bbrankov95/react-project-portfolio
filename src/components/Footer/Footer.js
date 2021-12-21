@@ -1,30 +1,30 @@
-import './Footer.css';
+import classes from './Footer.module.scss';
 import { FaFacebook, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <footer className="site-footer">
-            <div className='footer-links'>
-                <div className='wrapper'>
+        <footer className={classes["site-footer"]}>
+            <div className={classes['footer-links']}>
+                <div className={classes['wrapper']}>
                     <a href='https://www.facebook.com/'>
-                        <div className='button'>
-                            <div className='icon'><FaFacebook /></div>
+                        <div className={classes['button']}>
+                            <div className={classes['icon']}><FaFacebook /></div>
                             <span>Facebook</span>
                         </div>
                     </a>
                 </div>
-                <div className='wrapper'>
+                <div className={classes['wrapper']}>
                     <a href='https://www.github.com/Bbrankov95'>
-                        <div className='button'>
-                            <div className='icon'><FaGithub /></div>
+                        <div className={classes['button']}>
+                            <div className={classes['icon']}><FaGithub /></div>
                             <span>GitHub</span>
                         </div>
                     </a>
                 </div>
-                <div className='wrapper'>
+                <div className={classes['wrapper']}>
                     <a href='https://www.linkedin.com/'>
-                        <div className='button'>
-                            <div className='icon'><FaLinkedinIn /></div>
+                        <div className={classes['button']}>
+                            <div className={classes['icon']}><FaLinkedinIn /></div>
                             <span>LinkedIn</span>
                         </div>
                     </a>
