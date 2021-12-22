@@ -1,0 +1,55 @@
+@import '../../styles/variables/variables.scss';
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 5;
+    color: $navcolor
+}
+
+.modal-content {
+    background-color: $navcolor;
+    color: $textcolor;
+    width: 50vw;
+    text-align: center;
+    position: relative;
+    transition: animation 500ms;
+    animation: fadeInUp 1s;
+    box-shadow: 0px 5px 5px #0f0b0b91;;
+}
+
+.modal-ico {
+    position: absolute;
+    top: 5%;
+    right: 0;
+    font-size: 1.5em;
+    color: $textcolor;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.modal-header{
+    padding: 1rem;
+    background-color: $navcolor;
+    color: $textcolor;
+}
+
+@keyframes fadeInUp {
+    from {
+       transform: translateY(-50%);
+       opacity: 0;
+    } to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}

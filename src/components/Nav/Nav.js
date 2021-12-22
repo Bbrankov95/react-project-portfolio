@@ -15,7 +15,7 @@ const Nav = () => {
                 <ul className={burgerState? classes['burger-links']:classes['nav-links']}>
                     <a href='#home'>Home</a>
                     <a href='#about'>About</a>
-                    <a href='#projects'>Projects</a>
+                    <a href='#widgets'>Widgets</a>
                     <a href='#contact-me'>Contact</a>
                 </ul>
                 <ToggleButton onClick={onClickHandler} />

@@ -1,0 +1,61 @@
+.toggled {
+  display: block;
+  width: 170px;
+  position: absolute;
+  z-index: 5;
+}
+
+.dd-header {
+  width: 170px;
+  position: relative;
+}
+
+.dd-wrapper {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: auto;
+}
+
+.dd-btn {
+  background: #130944;
+  color: #f1db65;
+  width: auto;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 1em;
+  border: 3px solid #130944;
+  -webkit-transition: color 500ms,background-color 500ms;
+  transition: color 500ms,background-color 500ms;
+  cursor: pointer;
+  width: 100%;
+}
+
+.dd-btn:hover {
+  color: #130944;
+  background: #f1db65;
+}
+
+.toggled-off {
+  display: none;
+  background-color: white;
+  -webkit-box-shadow: 0px 7px 7px black;
+          box-shadow: 0px 7px 7px black;
+  width: auto;
+}
+
+.dd-item {
+  list-style: none;
+  cursor: pointer;
+  background-color: #130944;
+  color: #f1db65;
+  padding: 1em;
+  -webkit-transition: color 500ms,background-color 500ms;
+  transition: color 500ms,background-color 500ms;
+}
+
+.dd-item:hover {
+  background-color: #f1db65;
+  color: #130944;
+}
+/*# sourceMappingURL=Dropdown.module.css.map */

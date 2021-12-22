@@ -84,5 +84,8 @@ span {
   .site-footer .footer-links span {
     font-size: 0.7rem;
   }
+  .wrapper .button:hover {
+    width: 150px;
+  }
 }
 /*# sourceMappingURL=Footer.module.css.map */

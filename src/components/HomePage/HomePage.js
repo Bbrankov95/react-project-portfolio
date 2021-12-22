@@ -1,10 +1,14 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import classes from "./HomePage.module.scss";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaGlobe, FaJs, FaReact, FaHtml5, FaCss3, FaAngleDoubleUp } from 'react-icons/fa';
+import Modal from "../Modal/Modal";
+import Dropdown from "../Dropdown/Dropdown";
+
 
 const HomePage = () => {
+    const [show, setShow] = useState(false);
 
     useEffect(() => {
         Aos.init({ duration: 2000 })
@@ -57,13 +61,24 @@ const HomePage = () => {
                     </svg>
                 </div>
             </section>
-            <section id="projects" className={classes["yellow"]}>
-                <h1>Projects Page</h1>
-                <div data-aos="zoom-in" className={classes["project-container"]}>
-                    <img className={classes['project-img']} data-aos="zoom-in" data-aos-duration="3000" src="https://wallpaperaccess.com/full/1164874.jpg" alt="project-img"></img>
-                    <img className={classes['project-img']} data-aos="zoom-in" data-aos-duration="3000" src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8d2ViJTIwZGVzaWdufGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt=""></img>
-                    <img className={classes['project-img']} data-aos="zoom-in" data-aos-duration="3000" src="https://wallpaperaccess.com/full/1164874.jpg" alt="project-img"></img>
-                    <img className={classes['project-img']} data-aos="zoom-in" data-aos-duration="3000" src="https://wallpaperaccess.com/full/1164874.jpg" alt="project-img"></img>
+            <section id='widgets' className={classes['yellow']}>
+                <h1>Widgets</h1>
+                <div className={classes["widgets-wrapper"]}>
+                    <div className={classes["widget-item"]}>
+                        <h3>Custom Modal</h3>
+                        <br/>
+                        <button className={classes["modal-btn"]} onClick={() => setShow(true)}>Show Modal</button>
+                        {show ? <Modal
+                            msg={'Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, natus!'}
+                            title={'My Modal'}
+                            onClick={() => setShow(false)}
+                        /> : ''}
+                    </div>
+                    <div className={classes["widget-item"]}>
+                        <h3>Custom Dropdown</h3>
+                        <br/>
+                        <Dropdown/>
+                    </div>
                 </div>
                 <div className={classes["custom-shape-divider-top-1639478883"]}>
                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -84,7 +99,7 @@ const HomePage = () => {
                             <input name="email" type="email"></input>
                             <label htmlFor="message">Message:</label>
                             <textarea rows="5" maxLength='255'></textarea>
-                            <button><a href="#">Send Message</a></button>
+                            <button><a href="#home">Send Message</a></button>
                         </form>
                     </div>
                     <div data-aos='fade-left' className={classes["contact-me-info"]}>

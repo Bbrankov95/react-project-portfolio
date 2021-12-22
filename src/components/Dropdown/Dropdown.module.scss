@@ -1,0 +1,58 @@
+@import '../../styles/variables/variables.scss';
+
+
+.toggled {
+    display: block;
+    width: 170px;
+    position: absolute;
+    z-index: 5;
+}
+
+.dd-header {
+    width: 170px;
+    position: relative;
+}
+
+.dd-wrapper {
+    width: max-content;
+    margin: auto;
+}
+
+.dd-btn {
+    background: $navcolor;
+    color: $textcolor;
+    width: auto;
+    font-size: 1em;
+    font-weight: 600;
+    padding: 1em;
+    border: 3px solid $navcolor;
+    transition: color 500ms,background-color 500ms;
+    cursor: pointer;
+    width: 100%;
+}
+
+.dd-btn:hover {
+    color: $navcolor;
+    background: $textcolor;
+}
+
+.toggled-off {
+    display: none;
+    background-color: white;
+    box-shadow: 0px 7px 7px black;
+    width: auto;
+}
+
+.dd-item {
+    list-style: none;
+    cursor: pointer;
+    background-color: $navcolor;
+    color: $textcolor;
+    padding: 1em;
+    transition: color 500ms,background-color 500ms;
+}
+
+.dd-item:hover { 
+    background-color: $textcolor;
+    color: $navcolor;
+}
