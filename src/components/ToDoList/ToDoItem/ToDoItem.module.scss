@@ -1,0 +1,47 @@
+@import '../../../styles/variables/variables.scss';
+
+.controls {
+    display: flex;
+    cursor: pointer;
+}
+
+.todo-item {
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+    position: relative;
+}
+
+.check {
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+    background: $navcolor;
+    color: $textcolor;
+    text-decoration: line-through;
+    text-decoration-thickness: 5px;
+    position: relative;
+}
+
+.todo-item:before {
+    content: '';
+    position: absolute;
+    background: lime;
+    width: 0;
+}
+
+.check:before {
+    content: 'Done';
+    background: $textcolor;
+    width: 80%;
+    color: $navcolor;
+    position: absolute;
+    transition: width 500ms;
+}
+
+
+@media screen {
+    .check:before {
+        width: 65%;
+    }    
+}

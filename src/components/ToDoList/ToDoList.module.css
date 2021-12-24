@@ -1,0 +1,45 @@
+.wrapper {
+  background: #130944;
+  border: 3px solid #130944;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header input {
+  width: 100%;
+  background: #f1db65;
+  color: #130944;
+  border: 3px solid #130944;
+}
+
+.header button {
+  padding: 1em;
+  background: #130944;
+  color: #f1db65;
+  border: 1px solid #f1db65;
+  cursor: pointer;
+}
+
+.todo-body {
+  color: #f1db65;
+  list-style: none;
+}
+
+.todo-body :last-child {
+  border-bottom: 0;
+}
+
+.icon {
+  background: #130944;
+  color: #f1db65;
+  font-size: 1.3em;
+  cursor: pointer;
+}
+/*# sourceMappingURL=ToDoList.module.css.map */

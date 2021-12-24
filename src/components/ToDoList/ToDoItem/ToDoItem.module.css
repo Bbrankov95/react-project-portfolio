@@ -1,0 +1,56 @@
+.controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.todo-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #130944;
+  color: #f1db65;
+  text-decoration: line-through;
+  text-decoration-thickness: 5px;
+  position: relative;
+}
+
+.todo-item:before {
+  content: '';
+  position: absolute;
+  background: lime;
+  width: 0;
+}
+
+.check:before {
+  content: 'Done';
+  background: #f1db65;
+  width: 80%;
+  color: #130944;
+  position: absolute;
+  -webkit-transition: width 500ms;
+  transition: width 500ms;
+}
+
+@media screen {
+  .check:before {
+    width: 65%;
+  }
+}
+/*# sourceMappingURL=ToDoItem.module.css.map */

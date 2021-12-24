@@ -5,6 +5,8 @@ import "aos/dist/aos.css";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaGlobe, FaJs, FaReact, FaHtml5, FaCss3, FaAngleDoubleUp } from 'react-icons/fa';
 import Modal from "../Modal/Modal";
 import Dropdown from "../Dropdown/Dropdown";
+import Accordion from "../Accordion/Accordion";
+import ToDoList from "../ToDoList/ToDoList";
 
 
 const HomePage = () => {
@@ -66,7 +68,6 @@ const HomePage = () => {
                 <div className={classes["widgets-wrapper"]}>
                     <div className={classes["widget-item"]}>
                         <h3>Custom Modal</h3>
-                        <br/>
                         <button className={classes["modal-btn"]} onClick={() => setShow(true)}>Show Modal</button>
                         {show ? <Modal
                             msg={'Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, natus!'}
@@ -74,10 +75,30 @@ const HomePage = () => {
                             onClick={() => setShow(false)}
                         /> : ''}
                     </div>
-                    <div className={classes["widget-item"]}>
+                    <div data-aos="zoom-out"
+                        className={classes["widget-item"]}>
                         <h3>Custom Dropdown</h3>
-                        <br/>
-                        <Dropdown/>
+                        <Dropdown />
+                    </div>
+                    <div data-aos="fade-up"
+                        className={classes["widget-item"]}>
+                        <h3>Custom Accordion</h3>
+                        <Accordion
+                            title={'Accordion 1'}
+                            content={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi ipsum quaerat perferendis consequatur quam expedita delectus officiis. Architecto ut dicta modi odio repudiandae soluta totam laboriosam voluptatum voluptate quod? Vel facilis ipsum voluptate porro sed nisi suscipit voluptatum quo, dolores cupiditate et hic itaque veritatis. Ipsa doloribus rerum vel eos?'}
+                        />
+                        <Accordion
+                            title={'Accordion 2'}
+                            content={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi ipsum quaerat perferendis consequatur quam expedita delectus officiis. Architecto ut dicta modi odio repudiandae soluta totam?'}
+                        />
+                        <Accordion
+                            title={'Accordion 3'}
+                            content={'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'}
+                        />
+                    </div>
+                    <div data-aos='zoom-in' className={classes["widget-item"]}>
+                            <h3>Custom ToDo List</h3>
+                            <ToDoList/>
                     </div>
                 </div>
                 <div className={classes["custom-shape-divider-top-1639478883"]}>

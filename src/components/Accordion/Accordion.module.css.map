@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,UAAU,CAAC;EACP,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,QAAQ,EAAE,QAAQ;CACrB;;AAED,AAAA,iBAAiB,CAAC;EACd,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,OAAO,EAAE,GAAG;EACZ,UAAU,ECbH,OAAO;EDcd,KAAK,ECbG,OAAO;CDclB;;AAED,AAAA,cAAc,CAAC;EACX,MAAM,EAAE,OAAO;CAClB;;AAED,AAAA,eAAe,CAAC;EACZ,KAAK,ECrBG,OAAO;EDsBf,UAAU,ECvBH,OAAO;EDwBd,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "Accordion.module.scss",
+        "../../styles/variables/variables.scss"
+    ],
+    "names": [],
+    "file": "Accordion.module.css"
+}

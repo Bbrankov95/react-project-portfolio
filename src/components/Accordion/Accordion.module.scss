@@ -1,0 +1,26 @@
+@import '../../styles/variables/variables.scss';
+
+
+.accordion {
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+.accordion-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: $navcolor;
+    color: $textcolor;
+}
+
+.accordion-btn {
+    cursor: pointer;
+}
+
+.accordion-body {
+    color: $textcolor;
+    background: $navcolor;
+    padding: 1rem;
+}

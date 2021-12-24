@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import classnames from './Dropdown.module.scss';
 import { FaCaretDown } from 'react-icons/fa';
 
-const options = ['New York', 'Sofia', 'London'];
+const options = ['New York', 'Sofia', 'London','Berlin', 'Moscow', 'Madrid', 'Vienna'];
 const defaultState = 'Choose one';
 
 const Dropdown = () => {

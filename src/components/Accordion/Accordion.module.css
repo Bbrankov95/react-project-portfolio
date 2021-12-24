@@ -1,0 +1,28 @@
+.accordion {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.accordion-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1em;
+  background: #130944;
+  color: #f1db65;
+}
+
+.accordion-btn {
+  cursor: pointer;
+}
+
+.accordion-body {
+  color: #f1db65;
+  background: #130944;
+  padding: 1rem;
+}
+/*# sourceMappingURL=Accordion.module.css.map */

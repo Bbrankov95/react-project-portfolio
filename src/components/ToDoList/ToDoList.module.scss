@@ -1,0 +1,42 @@
+@import '../../styles/variables/variables.scss';
+
+.wrapper {
+    background: $navcolor;
+    border: 3px solid $navcolor;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    
+    input {
+        width: 100%;
+        background: $textcolor;
+        color: $navcolor;
+        border: 3px solid $navcolor;
+    }
+
+    button {
+        padding: 1em;
+        background: $navcolor;
+        color: $textcolor;
+        border: 1px solid $textcolor;
+        cursor: pointer;
+    }
+}
+
+.todo-body {
+    color: $textcolor;
+    list-style: none;
+}
+
+.todo-body :last-child {
+    border-bottom: 0;
+}
+
+.icon {
+    background: $navcolor;
+    color: $textcolor;
+    font-size: 1.3em;
+    cursor: pointer;
+}
