@@ -7,10 +7,11 @@ import Modal from "../Modal/Modal";
 import Dropdown from "../Dropdown/Dropdown";
 import Accordion from "../Accordion/Accordion";
 import ToDoList from "../ToDoList/ToDoList";
+import Form from "../Form/Form";
 
 
 const HomePage = () => {
-    const [show, setShow] = useState(false);
+    const [modal, setModal] = useState(false);
 
     useEffect(() => {
         Aos.init({ duration: 2000 })
@@ -68,17 +69,12 @@ const HomePage = () => {
                 <div className={classes["widgets-wrapper"]}>
                     <div className={classes["widget-item"]}>
                         <h3>Custom Modal</h3>
-                        <button className={classes["modal-btn"]} onClick={() => setShow(true)}>Show Modal</button>
-                        {show ? <Modal
+                        <button className={classes["modal-btn"]} onClick={() => setModal(true)}>Show Modal</button>
+                        {modal ? <Modal
                             msg={'Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, natus!'}
                             title={'My Modal'}
-                            onClick={() => setShow(false)}
+                            onClick={() => setModal(false)}
                         /> : ''}
-                    </div>
-                    <div data-aos="zoom-out"
-                        className={classes["widget-item"]}>
-                        <h3>Custom Dropdown</h3>
-                        <Dropdown />
                     </div>
                     <div data-aos="fade-up"
                         className={classes["widget-item"]}>
@@ -96,9 +92,18 @@ const HomePage = () => {
                             content={'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'}
                         />
                     </div>
+                    <div data-aos="zoom-out"
+                        className={classes["widget-item"]}>
+                        <h3>Custom Dropdown</h3>
+                        <Dropdown />
+                    </div>
                     <div data-aos='zoom-in' className={classes["widget-item"]}>
                             <h3>Custom ToDo List</h3>
                             <ToDoList/>
+                    </div>
+                    <div data-aos='zoom-in' className={classes["widget-item"]}>
+                            <h3>Custom Form</h3>
+                            <Form/>
                     </div>
                 </div>
                 <div className={classes["custom-shape-divider-top-1639478883"]}>

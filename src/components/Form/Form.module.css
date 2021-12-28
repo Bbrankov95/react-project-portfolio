@@ -1,0 +1,129 @@
+.wrapper {
+  display: block;
+  background: #130944;
+  border: 5px solid #130944;
+  max-width: 350px;
+  margin: auto;
+}
+
+.wrapper label {
+  color: #f1db65;
+  padding: 1em;
+}
+
+.wrapper label:nth-of-type(4) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.wrapper label:nth-of-type(4) .hint {
+  border-radius: 50%;
+  font-size: 1.3em;
+  background: #f1db65;
+  color: #130944;
+  padding: 3px;
+  margin-left: 3px;
+}
+
+.wrapper label:nth-of-type(4) .hint:hover::after {
+  content: 'password must be between 6 and 15 characters(digits and letters only) long, including atleast one uppercase letter';
+  position: absolute;
+  background: #f1db65;
+  color: #130944;
+  top: 0;
+  margin-left: 3px;
+  border: 3px solid;
+  z-index: 5;
+  font-size: 0.5em;
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
+.wrapper input {
+  background: #f1db65;
+  text-align: center;
+  border: 1px #130944;
+  font-size: 1em;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overlay h3 {
+  color: #f1db65;
+  z-index: 5;
+}
+
+.overlay button {
+  padding: 1em;
+  margin-left: auto;
+  background: #130944;
+  color: #f1db65;
+  border: 3px solid #f1db65;
+  -webkit-transition: color 500ms,background-color 500ms;
+  transition: color 500ms,background-color 500ms;
+  cursor: pointer;
+}
+
+.overlay button:hover {
+  color: #130944;
+  background: #f1db65;
+}
+
+.btn {
+  background: #130944;
+  color: #f1db65;
+  padding: 1em;
+  cursor: pointer;
+  -webkit-transition: color 500ms,background-color 500ms;
+  transition: color 500ms,background-color 500ms;
+  margin-top: 1em;
+  border: 3px solid #f1db65;
+}
+
+.btn:hover {
+  color: #130944;
+  background: #f1db65;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  border: 3px solid #130944;
+}
+
+.error {
+  display: block;
+  color: red;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/*# sourceMappingURL=Form.module.css.map */

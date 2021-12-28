@@ -1,0 +1,22 @@
+.str-meter {
+    
+    progress {
+        -webkit-appearance: none;
+        height: 8px;
+    }
+}
+.pwd-strength-Weak::-moz-progress-bar {
+    background-color: #F25F5C;
+}
+
+.pwd-strength-Fair::-moz-progress-bar {
+    background-color: #FFE066;
+}
+
+.pwd-strength-Good::-moz-progress-bar {
+    background-color: #247ba0;
+}
+
+.pwd-strength-Strong::-moz-progress-bar {
+    background-color: rgb(4, 187, 4);
+}

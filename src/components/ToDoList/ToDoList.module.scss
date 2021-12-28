@@ -3,6 +3,8 @@
 .wrapper {
     background: $navcolor;
     border: 3px solid $navcolor;
+    max-width: 350px;
+    margin: auto;
 }
 
 .header {

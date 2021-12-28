@@ -1,6 +1,8 @@
 .wrapper {
   background: #130944;
   border: 3px solid #130944;
+  max-width: 350px;
+  margin: auto;
 }
 
 .header {

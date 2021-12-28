@@ -1,0 +1,107 @@
+@import '../../styles/variables/variables.scss';
+
+.wrapper{
+    display: block;
+    background: $navcolor;
+    border: 5px solid $navcolor;
+    max-width: 350px;
+    margin: auto;
+    label {
+        color: $textcolor;
+        padding: 1em;
+    }
+
+    label:nth-of-type(4) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .hint {
+            border-radius: 50%;
+            font-size: 1.3em;
+            background: $textcolor;
+            color: $navcolor;
+            padding: 3px;
+            margin-left: 3px;
+
+            &:hover::after {
+                content: 'password must be between 6-15 characters(digits and letters only) long, including atleast one uppercase letter';
+                position: absolute;
+                background: $textcolor;
+                color: $navcolor;
+                top: 0;
+                margin-left: 3px;
+                border: 3px solid;
+                z-index: 5;
+                font-size: 0.5em;
+                transform: translateY(-10%);
+            }
+        }
+    }
+
+    input {
+        background: $textcolor;
+        text-align: center;
+        border: 1px $navcolor;
+        font-size:1em;
+    }
+}
+
+.overlay {
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+        color: $textcolor;
+        z-index: 5;
+    }
+
+    button {
+        padding: 1em;
+        margin-left: auto;
+        background: $navcolor;
+        color: $textcolor;
+        border: 3px solid $textcolor;
+        transition: color 500ms,background-color 500ms;
+        cursor: pointer;
+    }
+    button:hover {
+        color: $navcolor;
+        background: $textcolor;
+    }
+}
+
+.btn {
+    background: $navcolor;
+    color: $textcolor;
+    padding: 1em;
+    cursor: pointer;
+    transition: color 500ms,background-color 500ms;
+    margin-top: 1em;
+    border:3px solid $textcolor;
+}
+
+.btn:hover {
+    color: $navcolor;
+    background: $textcolor;
+    transition: 500ms;
+    border: 3px solid $navcolor;
+}
+
+.error {
+    display: block;
+    color: red;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
