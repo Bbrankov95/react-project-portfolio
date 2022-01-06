@@ -25,16 +25,14 @@
 }
 
 .wrapper label:nth-of-type(4) .hint {
-  border-radius: 50%;
   font-size: 1.3em;
-  background: #f1db65;
-  color: #130944;
+  color: #f1db65;
   padding: 3px;
   margin-left: 3px;
 }
 
 .wrapper label:nth-of-type(4) .hint:hover::after {
-  content: 'password must be between 6 and 15 characters(digits and letters only) long, including atleast one uppercase letter';
+  content: 'password must be between 5-15 characters(digits and letters only) long, including atleast one uppercase letter';
   position: absolute;
   background: #f1db65;
   color: #130944;
@@ -114,7 +112,7 @@
 
 .error {
   display: block;
-  color: red;
+  color: #fb1d12;
 }
 
 .form {
@@ -125,5 +123,18 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.invalid {
+  border: 3px solid #fb1d12 !important;
+}
+
+.valid {
+  border: 3px solid #08f508 !important;
+}
+
+.formError {
+  color: #fb1d12;
+  font-family: Arial, Helvetica, sans-serif;
 }
 /*# sourceMappingURL=Form.module.css.map */

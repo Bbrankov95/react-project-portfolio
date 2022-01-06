@@ -10,6 +10,12 @@
         margin-top: 3%;
     }
 
+    span {
+        color: $textcolor;
+        margin: auto;
+        text-align: center;
+    }
+
     .footer-links {
         display: flex;
         justify-content: space-around;
@@ -57,24 +63,24 @@
     }
 }
 
-.wrapper .button:hover {
-    width: 200px;
-    background: $textcolor;
-    border-radius: 10%;
-    display: flex;
-    justify-content: space-between;
+.wrapper  {
+    .button:hover {
+        width: 200px;
+        background: $textcolor;
+        border-radius: 10%;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
-.wrapper .button:hover span {
-    color: $navcolor;
+.wrapper  {
+    .button:hover span {
+        color: $navcolor;
+    }
 }
 
 
-span {
-    color: $textcolor;
-    margin: auto;
-    text-align: center;
-}
+
 
 
 @media screen and (max-width:678px) {

@@ -239,7 +239,7 @@ section {
     width: 70%;
     height: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 
     form {
         display: flex;
@@ -351,10 +351,6 @@ section {
     .widgets-wrapper {
         display: flex;
         flex-direction: column;
-    }
-
-    .widgets-wrapper {
-        
         .widget-item {
             margin-top: 1em;
         }

@@ -130,7 +130,7 @@ const HomePage = () => {
                     </div>
                     <div data-aos='fade-left' className={classes["contact-me-info"]}>
                         <span><FaMapMarkerAlt />357 SE. Lakewood Ave. Ormond Beach, FL 32174</span>
-                        <span><FaPhoneAlt /> +1(123)-456-789</span>
+                        <span><FaPhoneAlt />+1(123)-456-789</span>
                         <span><FaEnvelope />example@example.com</span>
                         <span><FaGlobe /><a href="#">www.example.com</a></span>
                     </div>

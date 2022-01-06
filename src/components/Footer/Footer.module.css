@@ -10,6 +10,12 @@
   margin-top: 3%;
 }
 
+.site-footer span {
+  color: #f1db65;
+  margin: auto;
+  text-align: center;
+}
+
 .site-footer .footer-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -72,12 +78,6 @@
 
 .wrapper .button:hover span {
   color: #130944;
-}
-
-span {
-  color: #f1db65;
-  margin: auto;
-  text-align: center;
 }
 
 @media screen and (max-width: 678px) {

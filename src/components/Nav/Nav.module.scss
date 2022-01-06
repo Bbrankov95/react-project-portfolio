@@ -10,7 +10,9 @@ header {
     }
 
     nav {
-        margin: auto 5%;
+        margin: auto;
+        max-width: 2000px;
+        
 
         .nav-links {
             display: flex;

@@ -9,7 +9,8 @@ header h1 {
 }
 
 header nav {
-  margin: auto 5%;
+  margin: auto;
+  max-width: 2000px;
 }
 
 header nav .nav-links {
