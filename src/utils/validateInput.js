@@ -1,6 +1,6 @@
 
 
-const validateInput = (id,value) => {
+const validateInput = (id,value,formValues) => {
     switch(id) {
         case 'username':
             const usernameRegex = /^[a-zA-Z0-9_.]{3,15}$/gm;
@@ -21,7 +21,24 @@ const validateInput = (id,value) => {
         case 'password':
             const passRegex = /^\w*[A-Z]+\w*$/gm;
             const passwordValid = passRegex.exec(value);
+            
             if(passwordValid && (passwordValid[0].length > 4 && passwordValid[0].length < 15)) {
+                return true;
+            } else {
+                return false;
+            }
+        case 'rePass':
+            const password = formValues?.password?.value;
+            if(value === password && value) {
+                return true;
+            } else {
+                return false;
+            }
+        case 'birthDate':
+            const timeStampNow = new Date().getTime();
+            const timeStampValue = new Date(value).getTime();
+            const oneYearTimeStamp = 31557600000;
+            if(((timeStampNow - timeStampValue) / oneYearTimeStamp) >= 18) {
                 return true;
             } else {
                 return false;

@@ -19,13 +19,14 @@
         position: relative;
 
         .hint {
-            font-size: 1.3em;
+            font-size: 1.5em;
             color: $textcolor;
             padding: 3px;
             margin-left: 3px;
+            font-family: Arial, Helvetica, sans-serif;
 
             &:hover::after {
-                content: 'password must be between 5-15 characters(digits and letters only) long, including atleast one uppercase letter';
+                content: 'Password must be between 5-15 characters(digits and letters only) long, including atleast one uppercase letter';
                 position: absolute;
                 background: $textcolor;
                 color: $navcolor;
@@ -44,6 +45,7 @@
         text-align: center;
         border: 1px $navcolor;
         font-size:1em;
+        padding: .3rem;
     }
 }
 
